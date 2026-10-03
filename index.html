@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgriHub | Smart Farming Solutions</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER TOP ===== -->
+<div class="topbar">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center">
+    <div class="d-flex flex-wrap gap-3">
+      <span><i class="bi bi-envelope-fill me-1"></i> info@agrihub.com</span>
+      <span><i class="bi bi-telephone-fill me-1"></i> +880 1700-000000</span>
+    </div>
+    <div class="d-flex align-items-center gap-3">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+      <a href="#"><i class="bi bi-youtube"></i></a>
+      <a href="#" class="btn btn-sm btn-light ms-2 text-black">Login / Register</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">
+      <i class="bi bi-tree-fill text-success"></i> Agri<span class="text-success">Hub</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-success px-3" href="#">Login / Register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== BANNER SLIDER ===== -->
+<div id="heroSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button data-bs-target="#heroSlider" data-bs-slide-to="0" class="active"></button>
+    <button data-bs-target="#heroSlider" data-bs-slide-to="1"></button>
+    <button data-bs-target="#heroSlider" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://picsum.photos/seed/farmland1/1600/700" class="d-block w-100 hero-img" alt="Fresh from the farm">
+      <div class="carousel-caption">
+        <h1 class="display-4 fw-bold">Fresh From The Farm</h1>
+        <p class="lead">Quality seeds, organic produce and expert agri-advisory in one place.</p>
+        <a href="products.html" class="btn btn-success btn-lg mt-2">Shop Now</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/seed/farmland2/1600/700" class="d-block w-100 hero-img" alt="Smart farming">
+      <div class="carousel-caption">
+        <h1 class="display-4 fw-bold">Smart Farming Solutions</h1>
+        <p class="lead">IoT sensors, drone mapping and data-driven crop planning.</p>
+        <a href="services.html" class="btn btn-success btn-lg mt-2">Our Services</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/seed/farmland3/1600/700" class="d-block w-100 hero-img" alt="Farm to home">
+      <div class="carousel-caption">
+        <h1 class="display-4 fw-bold">Farm To Home Delivery</h1>
+        <p class="lead">Supporting 5,000+ local farmers across the country.</p>
+        <a href="contact.html" class="btn btn-success btn-lg mt-2">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" data-bs-target="#heroSlider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" data-bs-target="#heroSlider" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h6 class="text-success fw-bold text-uppercase">What We Do</h6>
+      <h2 class="fw-bold">Our Agricultural Services</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 service-card border-0 shadow-sm text-center p-4">
+          <i class="bi bi-flower1 service-icon"></i>
+          <h5 class="fw-bold mt-3">Crop Advisory</h5>
+          <p class="text-muted mb-0">Season-wise crop planning, pest control and yield improvement guidance.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 service-card border-0 shadow-sm text-center p-4">
+          <i class="bi bi-droplet-half service-icon"></i>
+          <h5 class="fw-bold mt-3">Soil Testing</h5>
+          <p class="text-muted mb-0">Laboratory soil analysis with custom fertilizer recommendation reports.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 service-card border-0 shadow-sm text-center p-4">
+          <i class="bi bi-truck service-icon"></i>
+          <h5 class="fw-bold mt-3">Machinery Rental</h5>
+          <p class="text-muted mb-0">Tractors, harvesters and irrigation pumps on affordable hourly rent.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 service-card border-0 shadow-sm text-center p-4">
+          <i class="bi bi-patch-check service-icon"></i>
+          <h5 class="fw-bold mt-3">Organic Certification</h5>
+          <p class="text-muted mb-0">End-to-end support to get your farm organically certified.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURED PRODUCTS ===== -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h6 class="text-success fw-bold text-uppercase">Our Store</h6>
+      <h2 class="fw-bold">Featured Products</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3">
+        <div class="card product-card border-0 shadow-sm h-100">
+          <img src="https://picsum.photos/seed/seedbag/600/400" class="card-img-top" alt="Hybrid Rice Seed">
+          <div class="card-body">
+            <span class="badge bg-success mb-2">Seeds</span>
+            <h6 class="fw-bold">Hybrid Rice Seed</h6>
+            <p class="text-muted small">High-yield, disease-resistant variety.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-success">৳ 450</span>
+              <a href="product-detail.html" class="btn btn-sm btn-outline-success">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card product-card border-0 shadow-sm h-100">
+          <img src="https://picsum.photos/seed/fertilizer/600/400" class="card-img-top" alt="Organic Fertilizer">
+          <div class="card-body">
+            <span class="badge bg-success mb-2">Fertilizers</span>
+            <h6 class="fw-bold">Organic Compost</h6>
+            <p class="text-muted small">100% natural, 25kg bag.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-success">৳ 320</span>
+              <a href="product-detail.html" class="btn btn-sm btn-outline-success">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card product-card border-0 shadow-sm h-100">
+          <img src="https://picsum.photos/seed/pump/600/400" class="card-img-top" alt="Water Pump">
+          <div class="card-body">
+            <span class="badge bg-success mb-2">Equipment</span>
+            <h6 class="fw-bold">Irrigation Pump</h6>
+            <p class="text-muted small">2HP diesel water pump set.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-success">৳ 12,500</span>
+              <a href="product-detail.html" class="btn btn-sm btn-outline-success">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card product-card border-0 shadow-sm h-100">
+          <img src="https://picsum.photos/seed/vegetables/600/400" class="card-img-top" alt="Organic Vegetables">
+          <div class="card-body">
+            <span class="badge bg-success mb-2">Produce</span>
+            <h6 class="fw-bold">Organic Vegetable Box</h6>
+            <p class="text-muted small">Weekly fresh harvest pack.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-success">৳ 700</span>
+              <a href="product-detail.html" class="btn btn-sm btn-outline-success">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="products.html" class="btn btn-success btn-lg">View All Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h6 class="text-success fw-bold text-uppercase">Testimonials</h6>
+      <h2 class="fw-bold">What Our Clients Say</h2>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100 p-4">
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="mb-3">"AgriHub's soil testing report doubled my paddy yield in one season. Their advisory team is genuinely helpful."</p>
+          <div class="d-flex align-items-center">
+            <img src="https://i.pravatar.cc/60?img=12" class="rounded-circle me-3" alt="Rahim Uddin">
+            <div><h6 class="mb-0 fw-bold">Rahim Uddin</h6><small class="text-muted">Farmer, Rajshahi</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100 p-4">
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+          </div>
+          <p class="mb-3">"We source all our organic vegetables through AgriHub. Delivery is always on time and quality is consistent."</p>
+          <div class="d-flex align-items-center">
+            <img src="https://i.pravatar.cc/60?img=45" class="rounded-circle me-3" alt="Nusrat Jahan">
+            <div><h6 class="mb-0 fw-bold">Nusrat Jahan</h6><small class="text-muted">Buyer, Dhaka</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TECHNOLOGY STACK ===== -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h6 class="text-success fw-bold text-uppercase">Powered By</h6>
+      <h2 class="fw-bold">Our Technology & Partners</h2>
+    </div>
+    <div class="row g-4 text-center align-items-center">
+      <div class="col-6 col-md-2"><i class="bi bi-cpu tech-icon"></i><p class="mb-0 small fw-semibold">IoT Sensors</p></div>
+      <div class="col-6 col-md-2"><i class="bi bi-airplane tech-icon"></i><p class="mb-0 small fw-semibold">Drone Mapping</p></div>
+      <div class="col-6 col-md-2"><i class="bi bi-satellite tech-icon"></i><p class="mb-0 small fw-semibold">Satellite Data</p></div>
+      <div class="col-6 col-md-2"><i class="bi bi-graph-up-arrow tech-icon"></i><p class="mb-0 small fw-semibold">Yield Analytics</p></div>
+      <div class="col-6 col-md-2"><i class="bi bi-cloud-sun tech-icon"></i><p class="mb-0 small fw-semibold">Weather API</p></div>
+      <div class="col-6 col-md-2"><i class="bi bi-phone tech-icon"></i><p class="mb-0 small fw-semibold">Mobile App</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BIG FOOTER ===== -->
+<footer class="big-footer pt-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5 class="fw-bold text-white"><i class="bi bi-tree-fill"></i> Agri<span class="text-success">Hub</span></h5>
+        <p class="small">AgriHub connects farmers, buyers and technology to build a smarter, sustainable agricultural ecosystem.</p>
+        <div class="d-flex gap-3 fs-5">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h6 class="text-white fw-bold mb-3">Contact Info</h6>
+        <ul class="list-unstyled footer-links">
+          <li><i class="bi bi-geo-alt-fill me-2"></i>Farm Road 12, Dhaka 1207</li>
+          <li><i class="bi bi-telephone-fill me-2"></i>+880 1700-000000</li>
+          <li><i class="bi bi-envelope-fill me-2"></i>info@agrihub.com</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h6 class="text-white fw-bold mb-3">Newsletter</h6>
+        <p class="small">Get farming tips & offers in your inbox.</p>
+        <form class="newsletter-form d-flex" onsubmit="return subscribeNewsletter(event)">
+          <input type="email" class="form-control" placeholder="Your email" required>
+          <button class="btn btn-success ms-2" type="submit"><i class="bi bi-send"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom mt-4 py-3">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <small>&copy; <span id="year"></span> AgriHub. All rights reserved.</small>
+      <small id="datetime"></small>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
