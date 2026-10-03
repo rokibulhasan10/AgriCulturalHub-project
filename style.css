@@ -1,0 +1,161 @@
+/* ==========================================================
+   AgriHub – External Stylesheet
+   ========================================================== */
+
+:root {
+  --agri-green: #2e7d32;
+  --agri-green-dark: #1b5e20;
+  --agri-lime: #8bc34a;
+  --agri-light: #f1f8e9;
+  --agri-dark: #1f2d1f;
+  --agri-gray: #6c757d;
+}
+
+* { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* ---------- Header Top Bar ---------- */
+.topbar {
+  background: var(--agri-green-dark);
+  color: #fff;
+  font-size: .875rem;
+  padding: .45rem 0;
+}
+.topbar a { color: #fff; text-decoration: none; opacity: .85; transition: .3s; }
+.topbar a:hover { opacity: 1; color: var(--agri-lime); }
+
+/* ---------- Navigation ---------- */
+.navbar { padding: .75rem 0; }
+.navbar-brand { font-size: 1.4rem; }
+.navbar .nav-link {
+  font-weight: 600;
+  color: #333 !important;
+  margin: 0 .35rem;
+  position: relative;
+  transition: color .3s ease;
+}
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%; bottom: 2px;
+  width: 0; height: 2px;
+  background: var(--agri-green);
+  transition: all .3s ease;
+  transform: translateX(-50%);
+}
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after { width: 80%; }
+.navbar .nav-link:hover,
+.navbar .nav-link.active { color: var(--agri-green) !important; }
+
+/* ---------- Hero Slider ---------- */
+.hero-img {
+  height: 70vh;
+  min-height: 420px;
+  object-fit: cover;
+  filter: brightness(.6);
+}
+.carousel-caption {
+  bottom: 25%;
+  text-shadow: 0 2px 10px rgba(0,0,0,.6);
+}
+.carousel-caption h1 { font-size: clamp(1.6rem, 4vw, 3.2rem); }
+
+/* ---------- Service Cards ---------- */
+.service-card { transition: transform .3s ease, box-shadow .3s ease; }
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(46,125,50,.18) !important;
+}
+.service-icon { font-size: 2.6rem; color: var(--agri-green); }
+
+/* ---------- Product Cards ---------- */
+.product-card { overflow: hidden; transition: transform .3s ease, box-shadow .3s ease; }
+.product-card:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(0,0,0,.12) !important; }
+.product-card img { height: 200px; object-fit: cover; transition: transform .5s ease; }
+.product-card:hover img { transform: scale(1.07); }
+
+/* ---------- Tech Stack ---------- */
+.tech-icon { font-size: 2.4rem; color: var(--agri-green); display: block; margin-bottom: .5rem; }
+
+/* ---------- Breadcrumb Section ---------- */
+.breadcrumb-section {
+  background: linear-gradient(rgba(27,94,32,.85), rgba(27,94,32,.85)),
+              url('https://picsum.photos/seed/breadcrumb/1600/400') center/cover no-repeat;
+  color: #fff;
+  padding: 70px 0 50px;
+  text-align: center;
+}
+.breadcrumb-section h1 { font-size: clamp(1.6rem, 3.5vw, 2.6rem); }
+.breadcrumb-section .breadcrumb { background: transparent; margin-top: .5rem; }
+.breadcrumb-section .breadcrumb-item a { color: var(--agri-lime); text-decoration: none; }
+.breadcrumb-section .breadcrumb-item.active { color: #fff; }
+.breadcrumb-section .breadcrumb-item + .breadcrumb-item::before { color: rgba(255,255,255,.7); }
+
+/* ---------- Products Page Filter ---------- */
+.sticky-filter { position: sticky; top: 90px; }
+#categoryFilter .list-group-item {
+  border: none;
+  border-radius: 6px !important;
+  margin-bottom: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .25s;
+}
+#categoryFilter .list-group-item:hover { background: var(--agri-light); color: var(--agri-green); }
+#categoryFilter .list-group-item.active {
+  background: var(--agri-green);
+  border-color: var(--agri-green);
+  color: #fff;
+}
+
+/* ---------- Image Zoom ---------- */
+.zoom-img { overflow: hidden; border-radius: 8px; cursor: zoom-in; }
+.zoom-img img { transition: transform .45s ease; display: block; }
+.zoom-img:hover img { transform: scale(1.35); }
+.main-image-box { border: 1px solid #e5e5e5; }
+.thumb-box { border: 2px solid transparent; transition: border-color .25s; }
+.thumb-box:hover,
+.thumb-box .thumb.active { border-color: var(--agri-green); }
+.thumb { cursor: pointer; }
+
+/* ---------- Team Cards ---------- */
+.team-card { overflow: hidden; transition: transform .3s ease; }
+.team-card:hover { transform: translateY(-6px); }
+.team-img { height: 230px; object-fit: cover; }
+.team-card a { color: var(--agri-gray); transition: color .25s; }
+.team-card a:hover { color: var(--agri-green); }
+
+/* ---------- Career / Job Cards ---------- */
+.job-card { transition: border-left .3s ease, transform .25s ease; border-left: 4px solid transparent !important; }
+.job-card:hover { border-left: 4px solid var(--agri-green) !important; transform: translateX(4px); }
+
+/* ---------- Big Footer ---------- */
+.big-footer {
+  background: var(--agri-dark);
+  color: #cfd8cf;
+  font-size: .92rem;
+}
+.big-footer a { color: #cfd8cf; text-decoration: none; transition: color .25s; }
+.big-footer a:hover { color: var(--agri-lime); }
+.footer-links li { margin-bottom: .5rem; }
+.newsletter-form input { border-radius: 6px 0 0 6px; border: none; }
+.newsletter-form button { border-radius: 0 6px 6px 0; }
+.footer-bottom { background: rgba(0,0,0,.25); border-top: 1px solid rgba(255,255,255,.08); }
+
+/* ---------- Responsive Tweaks ---------- */
+@media (max-width: 991.98px) {
+  .navbar .nav-link { margin: .35rem 0; }
+  .navbar .nav-link::after { display: none; }
+  .sticky-filter { position: static; margin-bottom: 1.5rem; }
+  .carousel-caption { bottom: 15%; }
+}
+@media (max-width: 575.98px) {
+  .hero-img { height: 55vh; }
+  .topbar { font-size: .78rem; }
+}
